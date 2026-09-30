@@ -1,0 +1,10 @@
+{
+  "name": "HEAD-END: Incident 04 // SOVEREIGN Campaign",
+  "short_name": "HEAD-END",
+  "start_url": "/head-end-sovereign/",
+  "display": "standalone",
+  "background_color": "#050914",
+  "theme_color": "#050914",
+  "description": "Interactive cyberpunk campaign experience",
+  "icons": []
+}
