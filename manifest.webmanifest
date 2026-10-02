@@ -1,10 +1,35 @@
 {
-  "name": "HEAD-END: Incident 04 // SOVEREIGN Campaign",
-  "short_name": "HEAD-END",
-  "start_url": "/head-end-sovereign/",
+  "id": "./",
+  "name": "HEAD-END: Incident 04 // SOVEREIGN",
+  "short_name": "HEAD-END 04",
+  "description": "A pixel-art techno-horror anthology about SOVEREIGN, playable across phones, tablets, laptops and desktop browsers.",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
+  "display_override": [
+    "window-controls-overlay",
+    "standalone",
+    "minimal-ui",
+    "browser"
+  ],
+  "orientation": "any",
   "background_color": "#050914",
   "theme_color": "#050914",
-  "description": "Interactive cyberpunk campaign experience",
-  "icons": []
+  "lang": "en",
+  "categories": ["games", "entertainment"],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
 }
