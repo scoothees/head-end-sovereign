@@ -1,4 +1,4 @@
-const CACHE = 'head-end-sovereign-github-pages-v10';
+const CACHE = 'head-end-sovereign-github-pages-v11-1-2';
 const BASE = new URL('./', self.location.href);
 const url = path => new URL(path, BASE).href;
 const CORE = [
@@ -7,7 +7,8 @@ const CORE = [
   url('manifest.webmanifest'),
   url('icon-192.png'),
   url('icon-512.png'),
-  url('apple-touch-icon.png')
+  url('apple-touch-icon.png'),
+  url('README.md')
 ];
 
 self.addEventListener('install', event => {
