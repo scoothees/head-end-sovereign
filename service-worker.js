@@ -1,4 +1,4 @@
-const CACHE = 'head-end-sovereign-github-pages-v11-1-2';
+const CACHE = 'head-end-sovereign-github-pages-v12-1';
 const BASE = new URL('./', self.location.href);
 const url = path => new URL(path, BASE).href;
 const CORE = [
@@ -36,9 +36,12 @@ self.addEventListener('fetch', event => {
     event.respondWith(
       fetch(event.request)
         .then(response => {
-          const copy = response.clone();
-          caches.open(CACHE).then(cache => cache.put(event.request, copy));
-          return response;
+          if (response && response.ok) {
+            const copy = response.clone();
+            caches.open(CACHE).then(cache => cache.put(event.request, copy));
+            return response;
+          }
+          return caches.match(url('index.html')).then(fallback => fallback || response);
         })
         .catch(() => caches.match(url('index.html')))
     );

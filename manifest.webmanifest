@@ -2,7 +2,7 @@
   "id": "./",
   "name": "HEAD-END: Incident 04 // SOVEREIGN",
   "short_name": "HEAD-END 04",
-  "description": "A pixel-art techno-horror anthology about SOVEREIGN, playable across phones, tablets, laptops and desktop browsers.",
+  "description": "Pixel-art techno-horror campaign with persistent world consequences, RPG systems, investigation, and a stability-tested secret 15-role Gorilla World counterfactual archive.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
@@ -16,7 +16,10 @@
   "background_color": "#050914",
   "theme_color": "#050914",
   "lang": "en",
-  "categories": ["games", "entertainment"],
+  "categories": [
+    "games",
+    "entertainment"
+  ],
   "prefer_related_applications": false,
   "icons": [
     {
